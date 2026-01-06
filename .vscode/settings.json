@@ -1,0 +1,24 @@
+{
+    "editor.fontSize": 18,
+    "terminal.integrated.fontSize": 14,
+    // --- Zenn (Markdown) 執筆向け ---
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": {
+            "comments": "off",
+            "strings": "on",
+            "other": "on"
+        },
+        // Zenn/Markdown は行末スペースで改行を表現することがあるので、勝手に消さない
+        "files.trimTrailingWhitespace": false,
+        "editor.trimAutoWhitespace": false
+    },
+    // 保存時に勝手に整形されて意図しない差分が出るのが嫌なら OFF のままが安全
+    // （Prettier を使うなら、Markdown は慎重に）
+    "editor.formatOnSave": false,
+    // 表示補助（好み）
+    "editor.renderWhitespace": "boundary",
+    "editor.rulers": [
+        80
+    ]
+}
